@@ -10,7 +10,7 @@ function timeout( ms, comment ) {
 (async () => {
 
   // Allow the server to start up
-  await timeout( 2000, 'Waiting for server startup' );
+  await timeout( 1000, 'Waiting for server startup' );
 
   // Initialize gun
   const gun  = Gun({
@@ -22,12 +22,12 @@ function timeout( ms, comment ) {
     super        : false,
     WebSocket    : require('cws'),
     peers        : [
-      'ws://'
+      'ws://localhost:1332'
     ]
   });
 
   // Allow gun to start up
-  await timeout( 2000, 'Waiting for gun startup' );
+  await timeout( 1000, 'Waiting for gun startup' );
 
   // Write the user
   console.log('Writing data');
@@ -38,7 +38,7 @@ function timeout( ms, comment ) {
   });
 
   // Let it pass through the whole network
-  let timer = 20;
+  let timer = 5;
   while(timer) {
     console.log('Passing time to let data flow:', timer--);
     await timeout(1000);
