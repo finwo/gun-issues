@@ -22,7 +22,7 @@ function timeout( ms, comment ) {
     super        : false,
     WebSocket    : require('cws'),
     peers        : [
-      'ws://localhost:1332'
+      'ws://localhost:1332/gun'
     ]
   });
 

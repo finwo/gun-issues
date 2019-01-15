@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd $(dirname $0)
+
 function indent() {
   while read line; do
     echo '    ' $line
@@ -24,13 +26,12 @@ echo " --> Removing data again"
 
 # Start the processes
 echo " --> Showing unexpected behavior"
-node server | indent & SERVER=$!
-node client | indent & CLIENT=$!
+node server | indent &
+node client | indent &
 
 # Wait for the child to finish
-wait $CLIENT
-
+wait %2
 # Kill the server
-kill $SERVER
+kill %1
 
 # Data not removed here, to allow inspection
