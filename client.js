@@ -38,7 +38,7 @@ function timeout( ms, comment ) {
   });
 
   // Let it pass through the whole network
-  let timer = 5;
+  let timer = 20;
   while(timer) {
     console.log('Passing time to let data flow:', timer--);
     await timeout(1000);
