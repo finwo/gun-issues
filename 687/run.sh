@@ -3,8 +3,8 @@
 cd $(dirname $0)
 
 function indent() {
-  while read line; do
-    echo '    ' $line
+  while IFS= read line; do
+    echo "     $line"
   done
 }
 
