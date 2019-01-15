@@ -1,0 +1,374 @@
+ --> Removing old data
+ --> Showing unexpected behavior
+Hello wonderful person! :) Thanks for using GUN, feel free to ask for help on https://gitter.im/amark/gun and ask StackOverflow questions tagged with 'gun'!
+Hello wonderful person! :) Thanks for using GUN, feel free to ask for help on https://gitter.im/amark/gun and ask StackOverflow questions tagged with 'gun'!
+Waiting for server startup
+Now listening on 1332
+Waiting for gun startup
+Writing data
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  '$':
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {} } },
+  I:
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 2,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'user',
+        soul: 'user',
+        next: [Object],
+        ask: [Object] } },
+  '#': 'TULPuAGbA' }
+gun.js:712 { get: { '.': 'admin', '#': 'user' },
+  '$':
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {} } },
+  I:
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 2,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'user',
+        soul: 'user',
+        next: [Object],
+        ask: [Object] } },
+  '#': 'TULPuAGbA' }
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  '$':
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {} } },
+  I:
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 2,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'user',
+        soul: 'user',
+        next: [Object],
+        ask: [Object] } },
+  '#': 'TULPuAGbA',
+  out: [Function: root],
+  user: undefined }
+Passing time to let data flow: 20
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  '#': 'TULPuAGbA',
+  '><': 'ws://localhost:1332/gun',
+  mesh:
+   { [Function]
+     via: { wire: [WebSocket], batch: null, queue: [], tail: null },
+     to: { 'ws://localhost:1332/gun': true } } }
+gun.js:712 { get: { '.': 'admin', '#': 'user' },
+  '#': 'TULPuAGbA',
+  '><': 'ws://localhost:1332/gun',
+  mesh:
+   { [Function]
+     via: { wire: [WebSocket], batch: null, queue: [], tail: null },
+     to: { 'ws://localhost:1332/gun': true } } }
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  '#': 'TULPuAGbA',
+  '><': 'ws://localhost:1332/gun',
+  mesh:
+   { [Function]
+     via: { wire: [WebSocket], batch: null, queue: [], tail: null },
+     to: { 'ws://localhost:1332/gun': true } },
+  out: [Function: root],
+  user: undefined }
+gun.js:699 { '@': 'TULPuAGbA',
+  put: undefined,
+  err: undefined,
+  rad: { [Function: Radix] map: [Function: map] } }
+gun.js:712 { '@': 'TULPuAGbA',
+  put: undefined,
+  err: undefined,
+  rad: { [Function: Radix] map: [Function: map] },
+  '#': 'UAlQspWtW' }
+gun.js:699 { '@': 'TULPuAGbA',
+  put: undefined,
+  err: undefined,
+  rad: { [Function: Radix] map: [Function: map] },
+  '#': 'UAlQspWtW',
+  out: [Function: root],
+  user: undefined }
+gun.js:699 { '@': 'TULPuAGbA',
+  '#': 'UAlQspWtW',
+  '><': 'uwr7ATX2I',
+  mesh:
+   { [Function]
+     via:
+      { url: 'ws://localhost:1332/gun',
+        wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null },
+     to: { uwr7ATX2I: true } } }
+gun.js:699 { '@': 'TULPuAGbA',
+  '#': 'UAlQspWtW',
+  '><': 'uwr7ATX2I',
+  mesh:
+   { [Function]
+     via:
+      { url: 'ws://localhost:1332/gun',
+        wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null },
+     to: { uwr7ATX2I: true } },
+  out: [Function: root],
+  user: undefined }
+Passing time to let data flow: 19
+Passing time to let data flow: 18
+Passing time to let data flow: 17
+Passing time to let data flow: 16
+Passing time to let data flow: 15
+Passing time to let data flow: 14
+Passing time to let data flow: 13
+Passing time to let data flow: 12
+Passing time to let data flow: 11
+Passing time to let data flow: 10
+Passing time to let data flow: 9
+Passing time to let data flow: 8
+Passing time to let data flow: 7
+Passing time to let data flow: 6
+Passing time to let data flow: 5
+Passing time to let data flow: 4
+Passing time to let data flow: 3
+Passing time to let data flow: 2
+Passing time to let data flow: 1
+Loading...
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  I:
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {},
+        put: undefined,
+        map: null,
+        link: null,
+        ack: -1 } },
+  '$':
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {},
+        put: undefined,
+        map: null,
+        link: null,
+        ack: -1 } },
+  '#': 'tc8ZZgs88' }
+gun.js:712 { get: { '.': 'admin', '#': 'user' },
+  I:
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {},
+        put: undefined,
+        map: null,
+        link: null,
+        ack: -1 } },
+  '$':
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {},
+        put: undefined,
+        map: null,
+        link: null,
+        ack: -1 } },
+  '#': 'tc8ZZgs88' }
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  I:
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {},
+        put: undefined,
+        map: null,
+        link: null,
+        ack: -1 } },
+  '$':
+   Gun {
+     _:
+      { gun: [Circular],
+        '$': [Circular],
+        root: [Object],
+        id: 3,
+        back: [Object],
+        on: [Function],
+        tag: [Object],
+        get: 'admin',
+        has: 'admin',
+        pass: {},
+        put: undefined,
+        map: null,
+        link: null,
+        ack: -1 } },
+  '#': 'tc8ZZgs88',
+  out: [Function: root],
+  user: undefined }
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  '#': 'tc8ZZgs88',
+  '><': 'ws://localhost:1332/gun',
+  mesh:
+   { [Function]
+     via:
+      { wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null,
+        id: 'uwr7ATX2I' },
+     to: { 'ws://localhost:1332/gun': true } } }
+gun.js:712 { get: { '.': 'admin', '#': 'user' },
+  '#': 'tc8ZZgs88',
+  '><': 'ws://localhost:1332/gun',
+  mesh:
+   { [Function]
+     via:
+      { wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null,
+        id: 'uwr7ATX2I' },
+     to: { 'ws://localhost:1332/gun': true } } }
+gun.js:699 { get: { '.': 'admin', '#': 'user' },
+  '#': 'tc8ZZgs88',
+  '><': 'ws://localhost:1332/gun',
+  mesh:
+   { [Function]
+     via:
+      { wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null,
+        id: 'uwr7ATX2I' },
+     to: { 'ws://localhost:1332/gun': true } },
+  out: [Function: root],
+  user: undefined }
+gun.js:699 { '@': 'tc8ZZgs88',
+  put: undefined,
+  err: undefined,
+  rad: { [Function: Radix] map: [Function: map] } }
+gun.js:712 { '@': 'tc8ZZgs88',
+  put: undefined,
+  err: undefined,
+  rad: { [Function: Radix] map: [Function: map] },
+  '#': 'pTi9cPGdP' }
+gun.js:699 { '@': 'tc8ZZgs88',
+  put: undefined,
+  err: undefined,
+  rad: { [Function: Radix] map: [Function: map] },
+  '#': 'pTi9cPGdP',
+  out: [Function: root],
+  user: undefined }
+gun.js:699 { '@': 'tc8ZZgs88',
+  '#': 'pTi9cPGdP',
+  '><': 'uwr7ATX2I',
+  mesh:
+   { [Function]
+     via:
+      { url: 'ws://localhost:1332/gun',
+        wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null },
+     to: { uwr7ATX2I: true } } }
+gun.js:699 { '@': 'tc8ZZgs88',
+  '#': 'pTi9cPGdP',
+  '><': 'uwr7ATX2I',
+  mesh:
+   { [Function]
+     via:
+      { url: 'ws://localhost:1332/gun',
+        wire: [WebSocket],
+        batch: null,
+        queue: [],
+        tail: null },
+     to: { uwr7ATX2I: true } },
+  out: [Function: root],
+  user: undefined }
+Received: undefined
