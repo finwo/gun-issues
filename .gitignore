@@ -1,2 +1,4 @@
 node_modules/
 ossl/
+package-lock.json
+shrinkwrap.yaml
