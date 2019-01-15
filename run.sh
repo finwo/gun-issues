@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
-FAIL=0
+# Remove data if present
+echo "Removing old data"
+[ -d "./radata" ] && rm -rf ./radata
+[ -d "./data"   ] && rm -rf ./data
+[ -d "./ossl"   ] && rm -rf ./ossl
 
 # Start the processes
-node server &
-node client &
+echo "Starting processes"
+node server & SERVER=$!
+node client & CLIENT=$!
 
-for job in `jobs -p`; do
-  echo $job
-  wait $job || let "FAIL+=1"
-done
+# Wait for the child to finish
+wait $CLIENT
 
-echo $FAIL
+# Kill the server
+kill $SERVER
