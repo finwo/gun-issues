@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "687": "cd 687 ; $(command -v pnpm npm | head -1) install ; bash run.sh"
+  }
+}
