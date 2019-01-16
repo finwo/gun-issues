@@ -6,7 +6,7 @@ cd $(dirname $0)
 # Make sure we have all dependencies
 [ -z "$SKIPDEP" ] && {
   NPM=$( command -v pnpm &>/dev/null && echo "pnpm recursive" || echo "npm" );
-  $NPM install
+  $NPM install --no-optional
 }
 
 # Helper function for indenting
