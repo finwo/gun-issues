@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+# Ensure we're in the right wd
 cd $(dirname $0)
 
+# Make sure we have all dependencies
+NPM=$( command -v pnpm &>/dev/null && echo "pnpm recursive" || echo "npm" );
+$NPM install
+
+# Helper function for indenting
 function indent() {
   while IFS= read line; do
     echo "     $line"
