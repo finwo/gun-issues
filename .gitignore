@@ -5,3 +5,4 @@ shrinkwrap.yaml
 data/
 radata/
 pnpm-debug.log
+.tern-port

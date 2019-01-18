@@ -6,6 +6,9 @@ function timeout( ms, comment ) {
   return new Promise( r => setTimeout(r,ms) );
 }
 
+// Preconfigure the wait timer
+let timer = 5;
+
 // Let's support async stuff
 (async () => {
 
@@ -35,10 +38,10 @@ function timeout( ms, comment ) {
     username: 'admin'
   }, function(ack) {
     console.log('ACK:',ack);
+    timer = 0;
   });
 
   // Let it pass through the whole network
-  let timer = 5;
   while(timer) {
     console.log('Passing time to let data flow:', timer--);
     await timeout(1000);
