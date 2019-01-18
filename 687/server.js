@@ -6,16 +6,15 @@ const port = 1332;
 const Gun  = require('gun');
 const http = require('http');
 
-// Initialize the server
-const server = http.createServer(Gun.serve());
-
-// Start listening
-server.listen(port, function() {
+// Start http server
+const server = http.createServer(Gun.serve( __dirname + '/public' )).listen(port, '0.0.0.0', function(err) {
+  if (err) throw err;
   console.log('Now listening on', port);
 });
 
 // Start gun
 let gun = Gun({
+  web          : server,
   ws           : {server},
   radisk       : true,
   localStorage : false,

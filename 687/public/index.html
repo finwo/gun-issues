@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        overflow: auto;
+      }
+      html, body {
+        font-family: sans-serif;
+        height     : 100%;
+        margin     : 0;
+        padding    : 0;
+      }
+      p {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="/gun/gun.js"></script>
+    <script src="/terminal.js"></script>
+    <script>
+
+      // Setup terminal
+      let term = new Terminal();
+      document.body.appendChild(term.html);
+
+      // Connect to gun
+      let peer = 'ws://' + document.location.host + '/gun';
+      term.print('Connecting gun to ' + peer);
+      let gun = new Gun(peer);
+
+      (async function() {
+
+        // Give the user some feedback
+        term.print('Giving gun some time to start');
+
+        // Give gun some time to start up
+        await new Promise(r => setTimeout(r,1000));
+
+        // Let's write data
+        term.print("> gun.get('user').get('admin').put({ username: 'admin' });");
+        gun.get('user').get('admin').put({ username: 'admin' }, function(ack) {
+          term.print('< ACK: ' + JSON.stringify(ack));
+        });
+
+        // Allow data to flow
+        term.print('Waiting for data to flow');
+        await new Promise(r => setTimeout(r, 5000));
+
+        // Let's see if we can fetch it
+        term.print("> gun.get('user').get('admin').once()");
+        gun.get('user').get('admin').once(function( data, id ) {
+          term.print('< (' + id + '): ' + JSON.stringify(data));
+        });
+      })();
+      console.log(gun);
+    </script>
+  </body>
+</html>
