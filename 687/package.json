@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "cws": "^1.0.0",
-    "gun": "0.9.999998"
+    "gun": "0.2020.514"
   }
 }
